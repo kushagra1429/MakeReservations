@@ -43,23 +43,28 @@ def download(request):
     DayM=[]
     TimeM=[]
     PurposeM=[]
+    MobileM=[]
 
     maindata={"Monday": g, "Tuesday": h, "Wednessday": j, "Thursday": cf, "Friday": jk, "Saturday": kl, "Sunday": lm}
 
     for i in range(len(x)):
         name1=Monday.objects.all()[i].EmployeeName
         Seats=Monday.objects.all()[i].BookedSeats
+        Mobile_Number=Monday.objects.all()[i].EmployeeMobile
+
         Code=Monday.objects.all()[i].Code
         trip=Monday.objects.all()[i].Trip
         times=Monday.objects.all()[i].Time
         purpose=Monday.objects.all()[i].Purpose
         Date=Monday.objects.all()[i].Date
-        data={"Day": "Monday", "Name": name1, "Code": Code, "Seats": Seats, "trip": trip, "time": times, "purpose": purpose, "date": Date}
+        data={"Day": "Monday", "Name": name1, "Code": Code, "Seats": Seats, "trip": trip, "time": times, "purpose": purpose, "date": Date,"MobileNumber": Mobile_Number}
 
         g.append(data)
 
     for i in range(len(w)):
         name2=Tuesday.objects.all()[i].EmployeeName
+        Mobile_Number2=Tuesday.objects.all()[i].EmployeeMobile
+
         Seats2=Tuesday.objects.all()[i].BookedSeats
         Code2=Tuesday.objects.all()[i].Code
         trip2=Tuesday.objects.all()[i].Trip
@@ -67,13 +72,15 @@ def download(request):
         purpose2=Tuesday.objects.all()[i].Purpose
         Date2=Tuesday.objects.all()[i].Date
 
-        data2={"Day": "Tuesday", "Name": name2,"Code": Code2, "Seats": Seats2, "trip": trip2, "time": time2, "purpose": purpose2, "date": Date2}
+        data2={"Day": "Tuesday", "Name": name2,"Code": Code2, "Seats": Seats2, "trip": trip2, "time": time2, "purpose": purpose2, "date": Date2, "MobileNumber": Mobile_Number2}
         h.append(data2)
 
        
     for i in range(len(e)):
         name3=Wednessday.objects.all()[i].EmployeeName
         Seats3=Wednessday.objects.all()[i].BookedSeats
+        Mobile_Number3=Wednessday.objects.all()[i].EmployeeMobile
+
         Code3=Wednessday.objects.all()[i].Code
 
         trip3=Wednessday.objects.all()[i].Trip
@@ -81,13 +88,15 @@ def download(request):
         purpose3=Wednessday.objects.all()[i].Purpose
         Date3=Wednessday.objects.all()[i].Date
 
-        data3={"Day": "Wednessday", "Name": name3, "Code": Code3,"Seats": Seats3, "trip": trip3, "time": time3, "purpose": purpose3, "date": Date3}
+        data3={"Day": "Wednessday", "Name": name3, "Code": Code3,"Seats": Seats3, "trip": trip3, "time": time3, "purpose": purpose3, "date": Date3, "MobileNumber": Mobile_Number3}
         j.append(data3)
 
 
     for i in range(len(r)):
 
         name4=Thursday.objects.all()[i].EmployeeName
+        Mobile_Number4=Thursday.objects.all()[i].EmployeeMobile
+
         Seats4=Thursday.objects.all()[i].BookedSeats
         Code4=Thursday.objects.all()[i].Code
 
@@ -96,13 +105,15 @@ def download(request):
         purpose4=Thursday.objects.all()[i].Purpose
         Date4=Thursday.objects.all()[i].Date
 
-        data4={"Day": "Thursday", "Name": name4,"Code": Code4, "Seats": Seats4, "trip": trip4, "time": time4, "purpose": purpose4, "date": Date4}
+        data4={"Day": "Thursday", "Name": name4,"Code": Code4, "Seats": Seats4, "trip": trip4, "time": time4, "purpose": purpose4, "date": Date4, "MobileNumber": Mobile_Number4}
         cf.append(data4)
 
 
     for i in range(len(t)):
 
         name5=Friday.objects.all()[i].EmployeeName
+        Mobile_Number5=Friday.objects.all()[i].EmployeeMobile
+
         Seats5=Friday.objects.all()[i].BookedSeats
         Code5=Thursday.objects.all()[i].Code
 
@@ -111,13 +122,15 @@ def download(request):
         purpose5=Friday.objects.all()[i].Purpose
         Date5=Friday.objects.all()[i].Date
 
-        data5={"Day": "Friday" ,"Name": name5, "Code": Code5, "Seats": Seats5, "trip": trip5, "time": time5, "purpose": purpose5, "date": Date5}
+        data5={"Day": "Friday" ,"Name": name5, "Code": Code5, "Seats": Seats5, "trip": trip5, "time": time5, "purpose": purpose5, "date": Date5, "MobileNumber": Mobile_Number5}
         jk.append(data5)
 
 
     for i in range(len(u)):
         name6=Saturday.objects.all()[i].EmployeeName
         Seats6=Saturday.objects.all()[i].BookedSeats
+        Mobile_Number6=Saturday.objects.all()[i].EmployeeMobile
+
         Code6=Thursday.objects.all()[i].Code
 
         trip6=Saturday.objects.all()[i].Trip
@@ -125,13 +138,15 @@ def download(request):
         purpose6=Saturday.objects.all()[i].Purpose
         Date6=Saturday.objects.all()[i].Date
 
-        data6={"Day": "Saturday",  "Name": name6,"Code": Code6, "Seats": Seats6, "trip": trip6, "time": time6, "purpose": purpose6, "date": Date6}
+        data6={"Day": "Saturday",  "Name": name6,"Code": Code6, "Seats": Seats6, "trip": trip6, "time": time6, "purpose": purpose6, "date": Date6, "MobileNumber": Mobile_Number6}
         kl.append(data6)
 
 
     for i in range(len(o)):
         name7=Sunday.objects.all()[i].EmployeeName
         Seats7=Sunday.objects.all()[i].BookedSeats
+        Mobile_Number7=Sunday.objects.all()[i].EmployeeMobile
+
         Code7=Thursday.objects.all()[i].Code
 
         trip7=Sunday.objects.all()[i].Trip
@@ -139,7 +154,7 @@ def download(request):
         purpose7=Sunday.objects.all()[i].Purpose
         Date7=Sunday.objects.all()[i].Date
 
-        data7={"Day": "Sunday", "Name": name7,"Code": Code7, "Seats": Seats7, "trip": trip7, "time": time7, "purpose": purpose7, "date": Date7}
+        data7={"Day": "Sunday", "Name": name7,"Code": Code7, "Seats": Seats7, "trip": trip7, "time": time7, "purpose": purpose7, "date": Date7, "Mobile Number": Mobile_Number7}
         lm.append(data7)
 
     guv=maindata["Monday"]
@@ -153,6 +168,8 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
+        ll=g['Mobile Number']
+
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
@@ -161,6 +178,7 @@ def download(request):
         TimeM.append(l)
         PurposeM.append(w)
         DateM.append(dt)
+        MobileM.append(ll)
     
     tuv=maindata["Tuesday"]
     print(len(tuv))
@@ -174,6 +192,8 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
+        ll=g['Mobile Number']
+
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
@@ -182,6 +202,8 @@ def download(request):
         TimeM.append(l)
         PurposeM.append(w)
         DateM.append(dt)
+        MobileM.append(ll)
+
     uuv=maindata["Wednessday"]
     print(len(uuv))
     for asgh in range(len(uuv)):
@@ -194,6 +216,8 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
+        ll=g['Mobile Number']
+
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
@@ -214,6 +238,8 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
+        ll=g['Mobile Number']
+
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
@@ -221,6 +247,8 @@ def download(request):
         TripM.append(k)
         TimeM.append(l)
         PurposeM.append(w)
+        MobileM.append(ll)
+
         DateM.append(dt)
     truv=maindata["Friday"]
     print(len(truv))
@@ -234,6 +262,8 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
+        ll=g['Mobile Number']
+
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
@@ -241,6 +271,8 @@ def download(request):
         TripM.append(k)
         TimeM.append(l)
         PurposeM.append(w)
+        MobileM.append(ll)
+
         DateM.append(dt)
     tfuv=maindata["Saturday"]
     print(len(tfuv))
@@ -254,11 +286,15 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
+        ll=g['Mobile Number']
+
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
         SeatM.append(h)
         TripM.append(k)
+        MobileM.append(ll)
+
         TimeM.append(l)
         PurposeM.append(w)
         DateM.append(dt)
@@ -274,15 +310,18 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
+        ll=g['Mobile Number']
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
         SeatM.append(h)
         TripM.append(k)
         TimeM.append(l)
+        MobileM.append(ll)
+
         PurposeM.append(w)
         DateM.append(dt)
-    c={"Name": NameM, "Code": CodeM, "Trip": TripM, "Time": TimeM, "Day": DayM, "Date": DateM, "Purpose": PurposeM, "Seats": SeatM}
+    c={"Name": NameM, "Code": CodeM, "Trip": TripM, "Time": TimeM, "Day": DayM, "Date": DateM, "Purpose": PurposeM, "Seats": SeatM, "Mobile Number": MobileM}
     vb=pd.DataFrame(c)
     print(vb)
     # vb.to_excel("Reservations.xlsx", index=False)
@@ -467,7 +506,6 @@ def MyBookings(request):
         if (Name4==name_user):
             Seats4=Thursday.objects.all()[i].BookedSeats
             Code4=Thursday.objects.all()[i].Code
-
             trip4=Thursday.objects.all()[i].Trip
             time4=Thursday.objects.all()[i].Time
             purpose4=Thursday.objects.all()[i].Purpose
@@ -483,7 +521,7 @@ def MyBookings(request):
         if (Name5==name_user):
 
             Seats5=Friday.objects.all()[i].BookedSeats
-            Code5=Thursday.objects.all()[i].Code
+            Code5=Friday.objects.all()[i].Code
 
             trip5=Friday.objects.all()[i].Trip
             time5=Friday.objects.all()[i].Time
@@ -499,7 +537,7 @@ def MyBookings(request):
         if (Name6==name_user):
 
             Seats6=Saturday.objects.all()[i].BookedSeats
-            Code6=Thursday.objects.all()[i].Code
+            Code6=Saturday.objects.all()[i].Code
 
             trip6=Saturday.objects.all()[i].Trip
             time6=Saturday.objects.all()[i].Time
@@ -515,7 +553,7 @@ def MyBookings(request):
         if (Name7==name_user):
 
             Seats7=Sunday.objects.all()[i].BookedSeats
-            Code7=Thursday.objects.all()[i].Code
+            Code7=Sunday.objects.all()[i].Code
 
             trip7=Sunday.objects.all()[i].Trip
             time7=Sunday.objects.all()[i].Time

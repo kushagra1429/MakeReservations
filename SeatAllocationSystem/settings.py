@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SeatAllocationSystem.wsgi.application'
+# WSGI_APPLICATION = 'SeatAllocationSystem.wsgi.application'
 
 
 # Database
