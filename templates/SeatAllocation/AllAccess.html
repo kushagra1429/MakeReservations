@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href='/static/AllAccess.css?{% now "U"%}' />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%load static%}
+</head>
+<body>
+    <div class="headerNote">
+        <div class="text2">Hello <span id="Name"></span>
+        </div>
+        <!-- <div class="FilterHeader">
+            <div class="askDay">
+                <label>Select the day of departure: </label>
+                <select name="Day" id="Day" required>
+                  <option disabled selected hidden>Select</option>
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednessday">Wednessday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+    
+                </select>
+            </div>
+            <div class="askRate">
+            <label>Choose your Trip:</label>
+            <select name="Trip" id="Trip">
+                <option value="Select" disabled selected hidden>Select</option>
+                <option value="Select">Township to Kota Station</option>
+                <option value="Select">Kota Station to Township</option>
+                <option value="Select">Township to Baran</option>
+                <option value="Select">Baran to township</option>
+            </select>
+            </div>
+            <div class="askTime">
+            <label>Time: </label>
+            <select name="Time" type="text" id="time">
+                <option value="Select" disabled selected hidden>Select</option>
+                <option value="Select">4:00PM</option>
+                <option value="Select">8:00AM</option>
+                <option value="Select">8:30PM</option>
+                <option value="Select">2:00PM</option>
+                <option value="Select">7:45PM</option>
+                <option value="Select">5:30PM</option>
+                <option value="Select">8:30AM</option>
+                <option value="Select">1:00PM</option>
+
+
+                
+
+
+            </select>
+            </div>
+            <div class="Purpose">
+            <label for="Purpose">Purpose: </label>
+            <select name="Purpose" id="Purpose">
+                <option value="Official">Official</option>
+                <option value="Personal">Personal</option>
+            </select>
+            </div>
+            
+        </div> -->
+        <div class="linkD">
+            <a href="download/"><button class="Download">Download</button></a>
+        </div>
+
+        
+          <!-- <div class="askDate">
+            <label>Date: </label>
+            <input type="date" name="Date" id="Date" class="Date" required>
+          </div> -->
+    </div>
+    <!-- <div class="text1" id="text1"> -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th id="Sno">ID</th>
+                    <th id="trip">Trip</th>
+                    <th>Name</th>
+                    <th>EmployeeID</th>
+                    <th>Mobile No.</th>
+
+                    <th>Day</th>
+                    <th id="date">Date</th>
+                    <th id="Time">Time</th>
+                    <th id="Purpose">Purpose</th>
+                    <th id="Seats">Seats</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <input type="text" name="trip" id="inptrip" readonly>
+                <input type="text" name="Nameee" id="Nameee" readonly>
+                <input type="text" name="CodeId", id="CodeId" readonly> 
+                <input type="text" name="Mobile", id="Mobile" readonly> 
+
+                <input type="text" name="Day" id="inpDay" readonly>
+                <input type="text" name="Date" id="inpDate" readonly>
+                <input type="text" name="Time" id="InpTime" readonly>
+                <input type="text" name="Purpose" id="inpPurpose" readonly>
+                <input type="text" name="Seats" id="inpSeats" readonly>
+            </tbody>
+
+
+
+            <!-- <form action="/DeleteAction/" method="post" id="Formsub">
+                {% csrf_token %}
+                <input type="text" name="trip" id="inptrip" readonly>
+                <input type="text" name="Day" id="inpDay" readonly>
+                <input type="text" name="Date" id="inpDate" readonly>
+                <input type="text" name="Time" id="InpTime" readonly>
+                <input type="text" name="Purpose" id="inpPurpose" readonly>
+                <input type="text" name="Seats" id="inpSeats" readonly>
+
+                
+
+            </form> -->
+        </table>
+    </div>
+
+    <script type="text/javascript">
+        const r=JSON.parse('{{user|safe}}');
+        console.log(r);
+        console.log(r.name_user);
+        console.log(typeof r);
+        console.log(r.Messagex)
+        
+    
+      </script>
+      <script src='{%static "AllAccess.js"%}'></script>
+</body>
+
+</html>

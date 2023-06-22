@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    {% load static %}
+    <link rel="stylesheet" href='/static/signUp.css?{% now "U"%}'>
+</head>
+<body>
+    {% if messages %}
+    <div class="alert">
+        {% for message in messages %}
+        {{ message }}
+        {% endfor %}
+    </div>
+    {% endif %}
+ 
+    
+    <div class="Signup">
+        <div class="text">Sign Up</div>
+        <div class="form">
+            <form action="Register/" method="post">
+                {% csrf_token %}
+                <input type="text" name="EmployeeName" id="EmployeeName" placeholder="Name of the Employee" required>
+                <input type="email" name="EmployeeEmail" id="EmployeeEmail" placeholder="Enter your Email ID" aria-required="true">
+                <input type="text" name="EmployeeMobile" id="EmployeeMobile" placeholder="Mobile No." required>
+                <input type="text" name="Code" id="Code" placeholder="Employee ID" >
+                <input type="submit" value="Submit" class="Submit">
+                <a href="SignIn/" class="SignIn">Already Have an Account?</a>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

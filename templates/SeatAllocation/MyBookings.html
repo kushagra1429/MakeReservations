@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href='/static/MyBookings.css?{% now "U"%}' />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%load static%}
+</head>
+<body>
+    <div class="headerNote">
+        <div class="text1">Your Bookings</div>
+        {% if messages %}
+        <div class="alert">
+            {% for message in messages %}
+            {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="text2">Hello <span id="Name"></span>
+        </div>
+    </div>
+    <!-- <div class="text1" id="text1"> -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th id="Sno">ID</th>
+                    <th id="trip">Trip</th>
+                    <th>Day</th>
+                    <th id="date">Date</th>
+                    <th id="Time">Time</th>
+                    <th id="Purpose">Purpose</th>
+                    <th id="Seats">Seats</th>
+                    
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <form action="/DeleteAction/" method="post" id="Formsub">
+                {% csrf_token %}
+                <input type="text" name="trip" id="inptrip" readonly>
+                <input type="text" name="Day" id="inpDay" readonly>
+                <input type="text" name="Date" id="inpDate" readonly>
+                <input type="text" name="Time" id="InpTime" readonly>
+                <input type="text" name="Purpose" id="inpPurpose" readonly>
+                <input type="text" name="Seats" id="inpSeats" readonly>
+                <!-- <input type="submit" value="Cancel" id="Submit"> -->
+                
+
+            </form>
+        </table>
+    </div>
+
+    <script type="text/javascript">
+        const r=JSON.parse('{{user|safe}}');
+        console.log(r);
+        console.log(r.name_user);
+        console.log(typeof r);
+        console.log(r.Messagex)
+        
+    
+      </script>
+      <script src='{%static "MyBookings.js"%}'></script>
+</body>
+
+</html>
