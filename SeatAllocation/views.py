@@ -356,6 +356,7 @@ def DeleteAction(request):
     if request.method=="POST":
         trip=request.POST['trip']
         day=request.POST['Day']
+        print(day)
         date=request.POST['Date']
         Time=request.POST['Time']
         Purpose=request.POST['Purpose']

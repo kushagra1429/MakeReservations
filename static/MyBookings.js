@@ -67,6 +67,7 @@ table.addEventListener('click', (e) => {
     if (confirm("Cancel my Booking")){
         console.log(trip.value);
         console.log(Day.value);
+        console.log("CancelBooking")
         const btn = e.target;
         var a = btn.closest('tr').cells[1].innerText
         var b = btn.closest('tr').cells[2].innerText
@@ -84,7 +85,7 @@ table.addEventListener('click', (e) => {
         // console.log(a[2])
         console.log("Clicked");
         form.submit();
-        location.reload()
+        // location.reload()
     }
     
     // document.getElementById("Submit").trigger("click");
