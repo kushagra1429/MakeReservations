@@ -115,7 +115,7 @@ def download(request):
         Mobile_Number5=Friday.objects.all()[i].EmployeeMobile
 
         Seats5=Friday.objects.all()[i].BookedSeats
-        Code5=Thursday.objects.all()[i].Code
+        Code5=Friday.objects.all()[i].Code
 
         trip5=Friday.objects.all()[i].Trip
         time5=Friday.objects.all()[i].Time
@@ -131,7 +131,7 @@ def download(request):
         Seats6=Saturday.objects.all()[i].BookedSeats
         Mobile_Number6=Saturday.objects.all()[i].EmployeeMobile
 
-        Code6=Thursday.objects.all()[i].Code
+        Code6=Saturday.objects.all()[i].Code
 
         trip6=Saturday.objects.all()[i].Trip
         time6=Saturday.objects.all()[i].Time
@@ -147,14 +147,14 @@ def download(request):
         Seats7=Sunday.objects.all()[i].BookedSeats
         Mobile_Number7=Sunday.objects.all()[i].EmployeeMobile
 
-        Code7=Thursday.objects.all()[i].Code
+        Code7=Sunday.objects.all()[i].Code
 
         trip7=Sunday.objects.all()[i].Trip
         time7=Sunday.objects.all()[i].Time
         purpose7=Sunday.objects.all()[i].Purpose
         Date7=Sunday.objects.all()[i].Date
 
-        data7={"Day": "Sunday", "Name": name7,"Code": Code7, "Seats": Seats7, "trip": trip7, "time": time7, "purpose": purpose7, "date": Date7, "Mobile Number": Mobile_Number7}
+        data7={"Day": "Sunday", "Name": name7,"Code": Code7, "Seats": Seats7, "trip": trip7, "time": time7, "purpose": purpose7, "date": Date7, "MobileNumber": Mobile_Number7}
         lm.append(data7)
 
     guv=maindata["Monday"]
@@ -168,7 +168,7 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
-        ll=g['Mobile Number']
+        ll=g['MobileNumber']
 
         DayM.append(b)
         NameM.append(d)
@@ -192,7 +192,7 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
-        ll=g['Mobile Number']
+        ll=g['MobileNumber']
 
         DayM.append(b)
         NameM.append(d)
@@ -216,7 +216,7 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
-        ll=g['Mobile Number']
+        ll=g['MobileNumber']
 
         DayM.append(b)
         NameM.append(d)
@@ -238,7 +238,7 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
-        ll=g['Mobile Number']
+        ll=g['MobileNumber']
 
         DayM.append(b)
         NameM.append(d)
@@ -262,7 +262,7 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
-        ll=g['Mobile Number']
+        ll=g['MobileNumber']
 
         DayM.append(b)
         NameM.append(d)
@@ -286,7 +286,7 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
-        ll=g['Mobile Number']
+        ll=g['MobileNumber']
 
         DayM.append(b)
         NameM.append(d)
@@ -310,7 +310,7 @@ def download(request):
         k=g['trip']
         l=g['time']
         w=g['purpose']
-        ll=g['Mobile Number']
+        ll=g['MobileNumber']
         DayM.append(b)
         NameM.append(d)
         CodeM.append(f)
@@ -1240,7 +1240,7 @@ def AllAccess(request):
         Mobile_Number5=Friday.objects.all()[i].EmployeeMobile
 
         Seats5=Friday.objects.all()[i].BookedSeats
-        Code5=Thursday.objects.all()[i].Code
+        Code5=Friday.objects.all()[i].Code
 
         trip5=Friday.objects.all()[i].Trip
         time5=Friday.objects.all()[i].Time
@@ -1256,7 +1256,7 @@ def AllAccess(request):
         Mobile_Number6=Saturday.objects.all()[i].EmployeeMobile
 
         Seats6=Saturday.objects.all()[i].BookedSeats
-        Code6=Thursday.objects.all()[i].Code
+        Code6=Saturday.objects.all()[i].Code
 
         trip6=Saturday.objects.all()[i].Trip
         time6=Saturday.objects.all()[i].Time
@@ -1272,7 +1272,7 @@ def AllAccess(request):
         Mobile_Number7=Sunday.objects.all()[i].EmployeeMobile
 
         Seats7=Sunday.objects.all()[i].BookedSeats
-        Code7=Thursday.objects.all()[i].Code
+        Code7=Sunday.objects.all()[i].Code
 
         trip7=Sunday.objects.all()[i].Trip
         time7=Sunday.objects.all()[i].Time

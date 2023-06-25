@@ -62,10 +62,11 @@ for (y in r.data) {
         tbody.innerHTML += `
             <tr>
                     <td>${k}</td>
+                    <td>${trip.value}</td>
+
                     <td>${Nameee.value}</td>
                     <td>${CodeId.value}</td>
                     <td>${mobile.value}</td>
-                    <td>${trip.value}</td>
                     <td>${Day.value}</td>
                     <td>${DateT.value}</td>
                     <td>${Time.value}</td>
