@@ -226,6 +226,8 @@ def download(request):
         TimeM.append(l)
         PurposeM.append(w)
         DateM.append(dt)
+        MobileM.append(ll)
+
     ouv=maindata["Thursday"]
     print(len(ouv))
     for asgh in range(len(ouv)):
@@ -663,7 +665,7 @@ def MyBookingsAdmin(request):
         Name5=Friday.objects.all()[i].EmployeeName
         if (Name5==name_user):
             Seats5=Friday.objects.all()[i].BookedSeats
-            Code5=Thursday.objects.all()[i].Code
+            Code5=Friday.objects.all()[i].Code
 
             trip5=Friday.objects.all()[i].Trip
             time5=Friday.objects.all()[i].Time
@@ -678,7 +680,7 @@ def MyBookingsAdmin(request):
         Name6=Saturday.objects.all()[i].EmployeeName
         if (Name6==name_user):
             Seats6=Saturday.objects.all()[i].BookedSeats
-            Code6=Thursday.objects.all()[i].Code
+            Code6=Saturday.objects.all()[i].Code
 
             trip6=Saturday.objects.all()[i].Trip
             time6=Saturday.objects.all()[i].Time
@@ -693,7 +695,7 @@ def MyBookingsAdmin(request):
         Name7=Sunday.objects.all()[i].EmployeeName
         if (Name7==name_user):
             Seats7=Sunday.objects.all()[i].BookedSeats
-            Code7=Thursday.objects.all()[i].Code
+            Code7=Sunday.objects.all()[i].Code
 
             trip7=Sunday.objects.all()[i].Trip
             time7=Sunday.objects.all()[i].Time
