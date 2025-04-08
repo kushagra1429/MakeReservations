@@ -7,4 +7,13 @@ The web app is customized for both User and the Admin. The admin has the authori
 
 The web app is built on the Django framework and uses MySQL as the databases Management tool. It is a foolproof and functional bookings platform with enhanced user interaction.
 
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865924465.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865931307.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865924848.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865926294-2.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865926294.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865924975.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865924098.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865920794.jpeg)
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865920316.jpeg)
 ![image alt](https://github.com/kushagra1429/MakeReservations/blob/cb0f476624f8641a74a029a2843c12771a22d389/1689865919668.jpeg)
