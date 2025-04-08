@@ -8,8 +8,10 @@ The web app is customized for both User and the Admin. The admin has the authori
 The web app is built on the Django framework and uses MySQL as the databases Management tool. It is a foolproof and functional bookings platform with enhanced user interaction.
 
 Below is the video demonstration of the platform.
-[![Watch the video](https://github.com/kushagra1429/MakeReservations/blob/66ac41ce5987dadca3d66ad3cca654cc5726dc3a/video.mp4)]
-
+<video width="640" height="480" controls>
+  <source src="https://github.com/kushagra1429/MakeReservations/blob/66ac41ce5987dadca3d66ad3cca654cc5726dc3a/video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 Supporting images:
 
 ![image alt](https://github.com/kushagra1429/MakeReservations/blob/5a8dca9ae755e4b6f1ce899b7e941aa2238d545b/1689865924465.jpeg)
