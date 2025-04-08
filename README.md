@@ -6,3 +6,5 @@ The web app facilitates user to book a seat for a particular trip conveniently w
 The web app is customized for both User and the Admin. The admin has the authority to view all the bookings made by the distinct users, showing him the necessary details like the trip, date, time, day, name of the Employee, mobile number of the Employee, EmployeeID, and the seats booked by the Employee, giving him the universal access. Admin can also download the displayed data in the form of excel sheet for further analysis or as a record.
 
 The web app is built on the Django framework and uses MySQL as the databases Management tool. It is a foolproof and functional bookings platform with enhanced user interaction.
+
+![image alt](https://github.com/kushagra1429/MakeReservations/blob/cb0f476624f8641a74a029a2843c12771a22d389/1689865919668.jpeg)
